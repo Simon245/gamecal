@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Gamecal</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Gamecal</title>
+    <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", media: "all"%>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header role="banner">
+      <nav class="navbar navbar-inverse navbar-fixed" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">GameCal</a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-<%= yield %>
+  <%= yield %>
 
-</body>
+  </body>
+  <footer>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+      <div class="container-fluid">
+        <div row>
+          <div class="navbar-header">
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </footer>
 </html>
