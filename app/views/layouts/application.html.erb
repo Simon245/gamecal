@@ -25,11 +25,24 @@
   <footer>
     <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
       <div class="container-fluid">
-        <div class="row">
-          <div class="navbar-header">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="pull-left">
+            <p>
+              <%= link_to "privacy policy", privacy_url%>
+               | &bull;
+              <%= link_to "terms of use", terms_url%>
+               | &bull;
+               | &copy; 2014 GameCal
+            </p>
           </div>
         </div>
-      </div>
+        <div class="col-md-3">
+          <div= class="pull-right">
+            <a href="http://steampowered.com">Powered by Steam</a>
+            <img class="steam_logo" src="https://dl.dropboxusercontent.com/u/77249216/steam_logo.jpg">
+          </div>
+        </div>
     </nav>
   </footer>
 </html>
