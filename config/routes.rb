@@ -2,7 +2,7 @@ Gamecal::Application.routes.draw do
 
   root 'site#index'
 
-  get 'create' => 'site#create'
+  get 'event' => 'site#event'
   get 'privacy' => 'site#privacy'
   get 'terms' => 'site#terms'
 

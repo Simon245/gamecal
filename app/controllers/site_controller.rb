@@ -4,7 +4,7 @@ class SiteController < ApplicationController
 
   end
 
-  def create
+  def event
 
   end
 
