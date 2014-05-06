@@ -3,8 +3,8 @@
   <head>
     <title>Gamecal</title>
     <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css", media: "all"%>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag    "application", media: "all"%>
+    <%= javascript_include_tag "application"%>
     <%= csrf_meta_tags %>
   </head>
   <body>
@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="col-md-3">
-          <div= class="pull-right">
+          <div class="pull-right">
             <a href="http://steampowered.com">Powered by Steam</a>
             <img class="steam_logo" src="https://dl.dropboxusercontent.com/u/77249216/steam_logo.jpg">
           </div>
