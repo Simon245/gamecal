@@ -17,7 +17,23 @@
     </div>
   </div>
   <div class="col-md-4">
-    <img class="calandar" src="http://www.freegreatimages.com/wp-content/uploads/2014/04/calendar_template_by_sinatarayne-d3604mz.jpg">
+    <div id="events">
+      <h2 id="month">
+        <%= link_to "<", date: @date.prev_month %>
+        <%= @date.strftime("%B %Y") %>
+        <%= link_to ">", date: @date.next_month %>
+      </h2>
+      <%= calendar @date do |date| %>
+        <%= date.day %>
+        <% if @events_by_date[date] %>
+          <ul>
+            <% @events_by_date[date].each do |event| %>
+              <li><%= link_to event.name, event %></li>
+            <% end %>
+          </ul>
+        <% end %>
+      <% end %>
+    </div>
   </div>
   <div class="col-md-3">
     <div class="panel panel-primary">

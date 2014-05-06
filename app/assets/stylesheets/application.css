@@ -43,10 +43,79 @@ body {
 
 footer{
 
+  }
+.steam_logo {
+  width: 50%;
+  height: 50%;
+}
 
+
+/*calendar*/
+
+#events .calendar {
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+#events .calendar td, #events .calendar th {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: "Lucida Grande", arial, helvetica, sans-serif;
+  font-size: 10px;
+  padding: 6px;
+  border: 1px solid #999;
+}
+
+#events .calendar th {
+  border-collapse: collapse;
+  width: 100%;
+  background: #DDD;
+  color: #666;
+  text-align: center;
+  width: 14.2857142857143%;
+}
+
+#events .calendar td {
+  border-collapse: collapse;
+  width: 100%;
+  background: #FFF;
+  color: #777;
+  height: 80px;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+#events .calendar .notmonth, #events .calendar .notmonth a {
+  border-collapse: collapse;
+  width: 100%;
+  color: #CCC;
+}
+#events .calendar .today {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #D7F2FF;
+}
+
+#events #month {
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 22px;
+
+}
+
+#events #month a {
+  margin: 0;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 22px;
+  text-decoration: none;
+  padding: 0 10px;
+  color: #999;
   }
-  .steam_logo {
-    width: 50%;
-    height: 50%;
-  }
+
+#events ul {
+  font-size: 11px;
+  padding-left: 20px;
 }
