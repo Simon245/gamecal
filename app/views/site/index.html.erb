@@ -4,9 +4,8 @@
   </div>
 </div>
 
-
 <div class="row">
-  <div class="col-md-5">
+  <div class="col-md-4">
     <div class="panel panel-primary">
       <div class="panel-heading">
         <h2 class="panel-title">Todays Events</h2>
@@ -16,8 +15,24 @@
       </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <img class="calandar" src="http://www.freegreatimages.com/wp-content/uploads/2014/04/calendar_template_by_sinatarayne-d3604mz.jpg">
+  <div class="col-md-5">
+    <div id="event_date">
+      <h2 id="month">
+        <%= link_to "<", date: @date.prev_month %>
+        <%= @date.strftime("%B %Y") %>
+        <%= link_to ">", date: @date.next_month %>
+      </h2>
+      <%= calendar @date do |date| %>
+        <%= date.day %>
+        <% if @articles_by_date[date] %>
+          <ul>
+            <% @articles_by_date[date].each do |article| %>
+              <li><%= link_to article.name, article %></li>
+            <% end %>
+          </ul>
+        <% end %>
+      <% end %>
+    </div>
   </div>
   <div class="col-md-3">
     <div class="panel panel-primary">
@@ -31,21 +46,4 @@
   </div>
 </div>
 
-<div id="articles">
-  <h2 id="month">
-    <%= link_to "<", date: @date.prev_month %>
-    <%= @date.strftime("%B %Y") %>
-    <%= link_to ">", date: @date.next_month %>
-  </h2>
-  <%= calendar @date do |date| %>
-    <%= date.day %>
-    <% if @articles_by_date[date] %>
-      <ul>
-        <% @articles_by_date[date].each do |article| %>
-          <li><%= link_to article.name, article %></li>
-        <% end %>
-      </ul>
-    <% end %>
-  <% end %>
-</div>
 
