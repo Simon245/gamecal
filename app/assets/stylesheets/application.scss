@@ -41,11 +41,15 @@ body {
 }
 
 footer{
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 16px;
+color: #38D;
 
+  .steam_logo {
+    width: 50%;
+    height: 50%;
+    margin: 5px;
   }
-.steam_logo {
-  width: 50%;
-  height: 50%;
 }
 
 
@@ -57,7 +61,7 @@ footer{
 
   td, th {
     font-family: "Lucida Grande", arial, helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 16px;
     padding: 6px;
     border: 1px solid #999;
   }
@@ -72,7 +76,7 @@ footer{
   td {
     background: #FFF;
     color: #777;
-    height: 80px;
+    height: 75px;
     vertical-align: top;
     font-size: 16px;
   }
