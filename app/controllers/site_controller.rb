@@ -6,10 +6,6 @@ class SiteController < ApplicationController
     @date = params[:date] ? Date.parse(params[:date]) : Date.today
   end
 
-  def event
-
-  end
-
   def privacy
 
   end
