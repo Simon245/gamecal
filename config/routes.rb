@@ -11,6 +11,7 @@ Gamecal::Application.routes.draw do
   # Event
 
   get 'event' => 'event#index'
+  get 'event' => 'event#create'
 
 
 
