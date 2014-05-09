@@ -9,25 +9,25 @@
     <%= form_for @event do |f|%>
       <div id="new_event">
 
-        <div class="group-btn">
-          <%= f.text_field(:game_id, class: "group-btn") %>
+        <div class="form-group" role="form">
+          <%= f.text_field :game_id, class: "form-control", placeholder: "Game" %>
         </div>
 
-        <select class="form-control">
+        <!-- <select class="form-control">
           <option>1</option>
           <option>1</option>
           <option>1</option>
           <option>1</option>
           <option>1</option>
-        </select>
+        </select> -->
 
-        <div class="form-group col-xs-4" role="form">
-          <%= f.text_field :date, class: "event_date form-control" %>
+        <div class="form-group" role="form">
+          <%= f.text_field :date, class: "event_date form-control", placeholder: "Date" %>
         </div>
 
         <div class="form-inline" role="form">
-          <%= f.text_field :time_start, class: "event_time"  %>
-          <%= f.text_field :time_finish, class: "event_time" %>
+          <%= f.text_field :time_start, class: "event_time form-control", placeholder: "Start time" %>
+          <%= f.text_field :time_finish, class: "event_time form-control", placeholder: "Finish time" %>
         </div>
 
         <div class="checkbox">
@@ -35,8 +35,8 @@
           <p>Email notification</p>
         </div>
 
-        <div class="form-group">
-          <%= f.text_area :description, size: "40x5", placeholder: "Description of event"  %>
+        <div class="form-group" role="form">
+          <%= f.text_area :description, size: "40x5", class: "form-control", placeholder: "Description of event"  %>
         </div>
 
         <div>
