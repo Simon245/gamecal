@@ -17,7 +17,14 @@ ActiveRecord::Schema.define(version: 20140506093505) do
   enable_extension "plpgsql"
 
   create_table "events", force: true do |t|
-    t.string   "description"
+    t.integer  "game_id"
+    t.string   "owner"
+    t.datetime "date"
+    t.datetime "time_start"
+    t.datetime "time_finish"
+    t.integer  "friend_id"
+    t.string   "email_address"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

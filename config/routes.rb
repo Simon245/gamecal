@@ -10,10 +10,11 @@ Gamecal::Application.routes.draw do
 
   # Event
 
-  get 'event' => 'event#index'
-  get 'event' => 'event#create'
+  # get 'events' => 'events#index'
+  # get 'events/new' => 'events#new'
+  # post 'events' => 'events#create'
 
-
+  resources :events
 
 
 end
