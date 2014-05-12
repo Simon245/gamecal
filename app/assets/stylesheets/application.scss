@@ -45,9 +45,25 @@ header{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   color: rgb(255, 255, 255);
+  // height: 60px;
+
+  .navbar-inverse{
+    margin-bottom: 60px;
+  }
 
   .navbar-header{
     color: rgb(255, 255, 255);
+  }
+
+  .navbar-inverse .navbar-brand{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    position: center;
+    margin: 15px;
+  }
+
+  .pull-right{
+    font-size: 35px;
   }
 
   .img-thumbnail{
@@ -56,9 +72,14 @@ header{
 }
 
 footer{
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-font-size: 16px;
-color: rgb(255, 255, 255);
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  height: 60px;
+
+   a{
+      color: rgb(255, 255, 255);
+   }
 
   .steam_logo {
     width: 50%;
