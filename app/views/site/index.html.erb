@@ -1,6 +1,16 @@
 <div class="row">
   <div class="col-md-12">
-    <h1>Hello (username here)</h1>
+    <div>
+      <% if session.key? :current_user %>
+        <h1>Current user:</h1>
+        <%= image_tag session[:current_user][:image] %>
+        <p><%= session[:current_user][:nickname] %></p>
+        <p><%= session[:current_user][:uid] %></p>
+      <% end %>
+    </div>
+    <div>
+      <%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_noborder.png"), '/auth/steam' %>
+    </div>
   </div>
 </div>
 
@@ -46,3 +56,6 @@
     </div>
   </div>
 </div>
+
+
+
