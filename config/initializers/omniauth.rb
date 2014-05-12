@@ -1,3 +1,3 @@
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :steam, ENV["STEAM_WEB_API_KEY"]
+  provider :steam, "9006A23029A4FD05FB8E43D7467183E8"
 end

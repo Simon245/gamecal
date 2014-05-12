@@ -1,5 +1,5 @@
 class SiteController < ApplicationController
-  skip_before_filter :verify_authenticity_token, :only => :auth_callback
+  skip_before_filter :verify_authenticity_token, :only => [ :auth_callback ]
   # before_action :is_authenticated?, except: [ :callback ]
 
   def index
