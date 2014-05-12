@@ -41,10 +41,24 @@ body {
   /*height: 100%;*/
 }
 
+header{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+
+  .navbar-header{
+    color: rgb(255, 255, 255);
+  }
+
+  .img-thumbnail{
+    margin: 5px;
+  }
+}
+
 footer{
 font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 font-size: 16px;
-color: #38D;
+color: rgb(255, 255, 255);
 
   .steam_logo {
     width: 50%;
