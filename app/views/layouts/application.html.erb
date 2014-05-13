@@ -17,7 +17,7 @@
           <div class="pull-right">
             <% if is_authenticated? %>
             <% else %>
-              <%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_noborder.png"), '/auth/steam' %>
+              <%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_border.png"), '/auth/steam' %>
             <% end %>
           <div class="pull-right">
             <% if session.key? :current_user %>
@@ -53,7 +53,7 @@
         <div class="col-md-3">
           <div= class="pull-right">
             Powered by Steam
-            <a href="http://steampowered.com"><img class="steam_logo" src="https://dl.dropboxusercontent.com/u/77249216/steam_logo.jpg"></a>
+            <a href="http://steampowered.com"><img class="steam_logo" <%= image_tag("globalheader_logo.png")%></a>
           </div>
         </div>
     </nav>

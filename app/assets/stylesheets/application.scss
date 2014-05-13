@@ -18,10 +18,16 @@
 html,
 body {
   height: 100%;
+
+  background-color: rgba(32,32,32,1);
 }
 
 .input-group{
   margin-bottom: 15px;
+}
+
+.panel-heading{
+  background-image: url('/assets/globalheader_bg.jpg');
 }
 
 .panel-body{
@@ -44,16 +50,14 @@ body {
 header{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
-  color: rgb(255, 255, 255);
-  // height: 60px;
+  color: rgba(0,0,0,1);
+
 
   .navbar-inverse{
     margin-bottom: 60px;
+    background-image: url('/assets/globalheader_bg.jpg');
   }
 
-  .navbar-header{
-    color: rgb(255, 255, 255);
-  }
 
   .navbar-inverse .navbar-brand{
     color: rgb(255, 255, 255);
@@ -65,6 +69,9 @@ header{
   .pull-right{
     font-size: 35px;
   }
+    img{
+      margin: 13px;
+    }
 
   .img-thumbnail{
     margin: 5px;
@@ -77,6 +84,10 @@ footer{
   color: rgb(255, 255, 255);
   height: 60px;
 
+    .navbar-inverse {
+      background-image: url('/assets/globalheader_bg.jpg');
+    }
+
    a{
       color: rgb(255, 255, 255);
    }
@@ -84,7 +95,8 @@ footer{
   .steam_logo {
     width: 50%;
     height: 50%;
-    margin: 5px;
+    margin: 10px;
+    margin-left: 14px;
   }
 }
 
