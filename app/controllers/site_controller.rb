@@ -23,12 +23,19 @@ class SiteController < ApplicationController
     render json: response
   end
 
+  def persona
+    response = HTTParty.get("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=9006A23029A4FD05FB8E43D7467183E8&steamids=76561197964824247")
+
+    render json: response
+  end
   def privacy
+    #getting friends list
 # http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=9006A23029A4FD05FB8E43D7467183E8&steamid=76561197970217281&relationship=friend
   end
 
   def terms
-
+    #getting individual players via the player summary
+# http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=9006A23029A4FD05FB8E43D7467183E8&steamids=76561197964824247
   end
 
 end

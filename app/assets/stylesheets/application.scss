@@ -15,15 +15,32 @@
  */
 
 
+// rgba(255,0,0,1)
+// rgba(232,232,232,1)
+
 html,
 body {
+  font-family: "arial", sans-serif;
   height: 100%;
+  // background-color: rgba(32,32,32,1);
+  background: #4c4c4c; /* Old browsers */
+  background: -moz-linear-gradient(top, #4c4c4c 0%, #303030 56%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(56%,#303030)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #4c4c4c 0%,#303030 56%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #4c4c4c 0%,#303030 56%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #4c4c4c 0%,#303030 56%); /* IE10+ */
+  background: linear-gradient(to bottom, #4c4c4c 0%,#303030 56%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
 
-  background-color: rgba(32,32,32,1);
+
 }
 
 .input-group{
   margin-bottom: 15px;
+}
+
+.panel{
+  border: none;
 }
 
 .panel-heading{
@@ -48,9 +65,10 @@ body {
 }
 
 header{
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Tahoma" ,Arial,sans-serif;
+  font-weight: bold;
   font-size: 16px;
-  color: rgba(0,0,0,1);
+  color: rgba(232,232,232,1);
 
 
   .navbar-inverse{
@@ -60,7 +78,7 @@ header{
 
 
   .navbar-inverse .navbar-brand{
-    color: rgb(255, 255, 255);
+    color: rgba(232,232,232,1);
     font-size: 40px;
     position: center;
     margin: 15px;
@@ -79,17 +97,18 @@ header{
 }
 
 footer{
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Arial",sans-serif;
   font-size: 16px;
-  color: rgb(255, 255, 255);
+  color: rgba(232,232,232,1);
   height: 60px;
 
     .navbar-inverse {
-      background-image: url('/assets/globalheader_bg.jpg');
+      // background-image: url('/assets/globalheader_bg.jpg');
+      background-color: rgba(0,0,0,1)
     }
 
    a{
-      color: rgb(255, 255, 255);
+      color: rgba(232,232,232,1);
    }
 
   .steam_logo {
@@ -133,15 +152,20 @@ footer{
   .today { background-color: #D7F2FF; }
 }
 
+#month{
+  background-image: url('/assets/globalheader_bg.jpg');
+}
+
 #events #month {
   margin: 0;
   padding-bottom: 10px;
   text-align: center;
   font-size: 22px;
+  color: rgba(232,232,232,1);
   a {
     text-decoration: none;
     padding: 0 10px;
-    color: #999;
+    color: rgba(232,232,232,1);
   }
 }
 
