@@ -17,8 +17,14 @@ class SiteController < ApplicationController
     redirect_to root_url
   end
 
-  def privacy
+  def friends
+    response = HTTParty.get("http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=9006A23029A4FD05FB8E43D7467183E8&steamid=76561197970217281&relationship=friend")
+    # Go get the friend data and include it in the response array
+    render json: response
+  end
 
+  def privacy
+# http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=9006A23029A4FD05FB8E43D7467183E8&steamid=76561197970217281&relationship=friend
   end
 
   def terms
