@@ -25,12 +25,12 @@ $ ->
         contentType: 'application/json',
         dataType: 'json',
         success: (data) ->
-          console.log data
+          players = data.response.players
 
 
-      ul = $('#friends-list ul')
+          ul = $('#friends-list ul')
 
-      for friend in data.friendslist.friends
-        li = $('<li></li>')
-        li.html friend.steamid # Change this to the HTML you need for a single friend
-        ul.append li
+          for player in players
+            li = $('<li></li>')
+            li.html player.personaname
+            ul.append li
