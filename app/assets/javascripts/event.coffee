@@ -17,7 +17,7 @@ $ ->
 
       steamids = friends.map (friend) -> friend.steamid
       steamids = steamids.join(',')
-      console.log steamids
+      # console.log
 
       $.ajax '/persona',
         method: 'GET',
@@ -26,6 +26,7 @@ $ ->
         dataType: 'json',
         success: (data) ->
           players = data.response.players
+          console.log data
 
 
           ul = $('#friends-list ul')
