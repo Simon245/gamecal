@@ -19,7 +19,6 @@
             <% else %>
               <%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_border.png"), '/auth/steam' %>
             <% end %>
-          <div class="pull-right">
             <% if session.key? :current_user %>
               Hello <%= session[:current_user][:nickname] %>
             <div class="img-thumbnail">
@@ -30,32 +29,35 @@
         </div>
       </nav>
     </header>
-  <div class="container">
-    <%= yield %>
-  </div>
+    <div class="container">
+      <%= yield %>
+    </div>
 
   </body>
   <footer>
     <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
       <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-9">
-          <div class="pull-left">
-            <p>
-              <%= link_to "privacy policy", privacy_url%>
-                &bull;
-              <%= link_to "terms of use", terms_url%>
-                &bull;
-                &copy; 2014 GameCal
-            </p>
+        <div class="row">
+          <div class="col-md-8">
+            <div class="pull-left">
+              <p>
+                <%= link_to "privacy policy", privacy_url%>
+                  &bull;
+                <%= link_to "terms of use", terms_url%>
+                  &bull;
+                  &copy; 2014 GameCal
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pull-right">
+              Powered by Steam
+              <a href="http://steampowered.com"><img class="steam_logo"><%= image_tag("globalheader_logo.png")%>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div= class="pull-right">
-            Powered by Steam
-            <a href="http://steampowered.com"><img class="steam_logo" <%= image_tag("globalheader_logo.png")%></a>
-          </div>
-        </div>
+      </div>
     </nav>
   </footer>
 </html>

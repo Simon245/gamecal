@@ -88,12 +88,13 @@ header{
     font-size: 35px;
   }
     img{
-      margin: 13px;
+      // margin: 13px;
     }
 
-  .img-thumbnail{
-    margin: 5px;
-  }
+    .img-thumbnail{
+      margin: 5px;
+      padding:2px;
+    }
 }
 
 footer{
@@ -104,19 +105,23 @@ footer{
 
     .navbar-inverse {
       // background-image: url('/assets/globalheader_bg.jpg');
-      background-color: rgba(0,0,0,1)
+      background-color: rgba(0,0,0,1);
     }
 
-   a{
-      color: rgba(232,232,232,1);
-   }
+    .pull-left{
+      line-height: 54px;
+    }
+
+     a{
+        color: rgba(232,232,232,1);
+     }
 
   .steam_logo {
-    width: 50%;
-    height: 50%;
-    margin: 10px;
-    margin-left: 14px;
   }
+
+   img{
+    margin: 10px;
+   }
 }
 
 

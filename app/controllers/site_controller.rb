@@ -24,7 +24,7 @@ class SiteController < ApplicationController
   end
 
   def persona
-    response = HTTParty.get("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=9006A23029A4FD05FB8E43D7467183E8&steamids=76561197964824247")
+    response = HTTParty.get("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=9006A23029A4FD05FB8E43D7467183E8&steamids={friendssteamidhere}")
 
     render json: response
   end
@@ -39,3 +39,7 @@ class SiteController < ApplicationController
   end
 
 end
+
+
+# TODO
+# use GetFriendList and then use player summary adding all friends steamid seperated by commas
