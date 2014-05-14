@@ -32,6 +32,9 @@ body {
   background: linear-gradient(to bottom, #4c4c4c 0%,#303030 56%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
 
+  h1{
+    color: rgba(232,232,232,1);
+  }
 
 }
 
@@ -40,11 +43,12 @@ body {
 }
 
 .panel{
-  border: none;
+  border: 1px solid rgba(0,0,1,1);
 }
 
 .panel-heading{
   background-image: url('/assets/globalheader_bg.jpg');
+
 }
 
 .panel-body{
@@ -52,6 +56,7 @@ body {
   padding: 5px;
   padding-left: 10px;
   overflow: auto;
+  background-color: rgba(218,217,199,1);
 }
 
 .calandar{
@@ -86,6 +91,7 @@ header{
 
   .pull-right{
     font-size: 35px;
+    line-height: 70px;
   }
     img{
       // margin: 13px;
@@ -94,6 +100,8 @@ header{
     .img-thumbnail{
       margin: 5px;
       padding:2px;
+      background-color: rgba(92,100,229,1);
+      border: 2px solid rgba(92,100,229,1);
     }
 }
 
@@ -123,6 +131,34 @@ footer{
     margin: 10px;
    }
 }
+
+
+/* Friends List*/
+
+#friends-list{
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+
+  ul{
+    list-style-type: none;
+
+  }
+    li{
+      // font-size: 20px;
+      // border: 10px;
+    }
+
+
+  .panel-body{
+    background-color: rgba(92,100,229,1);
+  }
+
+
+}
+
 
 
 /*calendar*/
@@ -167,6 +203,7 @@ footer{
   text-align: center;
   font-size: 22px;
   color: rgba(232,232,232,1);
+  border: 1px solid rgba(0,0,1,1);
   a {
     text-decoration: none;
     padding: 0 10px;

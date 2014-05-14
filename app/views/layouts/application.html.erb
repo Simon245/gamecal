@@ -12,17 +12,17 @@
       <nav class="navbar navbar-inverse navbar-fixed" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">GAMECAL</a>
+            <a class="navbar-brand" href="/">GAMECAL</a>
           </div>
           <div class="pull-right">
             <% if is_authenticated? %>
             <% else %>
-              <%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_large_border.png"), '/auth/steam' %>
+              <%= link_to image_tag("http://cdn.steamcommunity.com/public/images/signinthroughsteam/sits_landing.png"), '/auth/steam' %>
             <% end %>
             <% if session.key? :current_user %>
               Hello <%= session[:current_user][:nickname] %>
             <div class="img-thumbnail">
-              <%= image_tag session[:current_user][:image] %>
+              <a href="http://steamcommunity.com/"><%= image_tag session[:current_user][:image] %></a>
             </div>
             <% end %>
           </div>
