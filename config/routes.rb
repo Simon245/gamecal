@@ -8,6 +8,7 @@ Gamecal::Application.routes.draw do
   post '/auth/steam/callback' => 'site#auth_callback'
 
   get 'friends' => 'site#friends'
+  get 'persona' => 'site#persona'
 
 
   # Event

@@ -24,7 +24,8 @@ class SiteController < ApplicationController
   end
 
   def persona
-    response = HTTParty.get("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=9006A23029A4FD05FB8E43D7467183E8&steamids={friendssteamidhere}")
+    url = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=9006A23029A4FD05FB8E43D7467183E8&steamids=#{params[:steamids]}"
+    response = HTTParty.get(url)
 
     render json: response
   end

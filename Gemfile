@@ -12,6 +12,7 @@ gem 'bcrypt'
 gem 'omniauth-steam'
 gem 'figaro'
 gem 'httparty'
+gem 'pry'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
