@@ -1,0 +1,1 @@
+Gamecal::Application.config.secret_key_base = '6398f1e816ed184ce4890fe6a0820b6162321ac974f10d4d60d9caebedd586652b55bee3d8dc440687e57628bc8224e71ca9085bbdb28a579e8a15a1d522d81d'
