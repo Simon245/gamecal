@@ -14,12 +14,14 @@ class SiteController < ApplicationController
                                           :image => auth.info['image'],
                                           :uid => auth.uid }
 
+    session[:uid] = auth.uid
+
     redirect_to root_url
   end
 
   def friends
-    response = HTTParty.get("http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=9006A23029A4FD05FB8E43D7467183E8&steamid=76561197970217281&relationship=friend")
-    # Go get the friend data and include it in the response array
+    response = HTTParty.get("http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=9006A23029A4FD05FB8E43D7467183E8&steamid=#{session[:uid]}&relationship=friend")
+
     render json: response
   end
 
