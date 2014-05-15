@@ -20,13 +20,13 @@ class SiteController < ApplicationController
   end
 
   def friends
-    response = HTTParty.get("http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=9006A23029A4FD05FB8E43D7467183E8&steamid=#{session[:uid]}&relationship=friend")
+    response = HTTParty.get("http://api.steampowered.com/ISteamUser/GetFriendList/v0001/?key=#{STEAM_CONFIG['steam_api']}&steamid=#{session[:uid]}&relationship=friend")
 
     render json: response
   end
 
   def persona
-    url = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=9006A23029A4FD05FB8E43D7467183E8&steamids=#{params[:steamids]}"
+    url = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=#{STEAM_CONFIG['steam_api']}&steamids=#{params[:steamids]}"
     response = HTTParty.get(url)
 
     render json: response

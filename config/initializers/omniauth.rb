@@ -1,3 +1,5 @@
+STEAM_CONFIG = YAML.load_file("#{::Rails.root}/config/steam.yml")[::Rails.env]
+
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :steam, "9006A23029A4FD05FB8E43D7467183E8"
+  provider :steam, STEAM_CONFIG['steam_api']
 end
