@@ -56,5 +56,3 @@ production:
   encoding: unicode
   database: gamecal_production
   pool: 5
-  username: rails
-  password:
