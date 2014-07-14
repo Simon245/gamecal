@@ -1,6 +1,6 @@
 class CreateEvents < ActiveRecord::Migration
   def change
-    create_table :event do |t|
+    create_table :events do |t|
 
       t.integer  :game_id
       t.string   :owner
